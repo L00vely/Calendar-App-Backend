@@ -16,7 +16,7 @@ app.use( cors() );
 
 // Rutas
 app.use('/.netlify/functions/api/auth', require('./routes/auth') );
-app.use('.netlify/functions/api/events', require('./routes/events') );
+app.use('/.netlify/functions/api/events', require('./routes/events') );
 
 
 // Directorio público
