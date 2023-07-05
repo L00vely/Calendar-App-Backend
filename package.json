@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "./node modules/.bin/netlify-lambda serve src",
+    "build": "./node modules/.bin/netlify-lambda build src"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,8 @@
     "jsonwebtoken": "^9.0.0",
     "moment": "^2.29.4",
     "mongoose": "^7.3.1",
-    "nodemon": "^2.0.22"
+    "netlify-lambda": "^2.0.16",
+    "nodemon": "^2.0.22",
+    "serverless-http": "^3.2.0"
   }
 }
